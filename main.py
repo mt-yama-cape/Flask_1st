@@ -68,11 +68,14 @@ def post():
 
 @app.route("/json")
 def json_res():
-    retval = {"name": "yama", "age": 53, "hobby": "bike"}
-    return jsonify(retval)
+    data = [
+        {"name": "yama", "age": 53, "hobby": "bike"},
+        {"name": "kari", "age": 21, "hobby": "singing"},
+    ]
+    return jsonify(data)
 
 
-# 下記でも同じ
+# １件しかないとき、下記でも同じ
 @app.route("/json2")
 def json_res2():
     return jsonify(
