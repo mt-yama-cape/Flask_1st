@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-
-</head>
-
-<body>
-  <form action="./post" method="POST">
-    <input type="text" name="name">
-    <input type="submit" value="送信">
-  </form>
-</body>
-
-</html>
+{% extends "common.html" %}
+{% block content %}
+<form action="./post" method="POST">
+  <input type="text" name="name">
+  <input type="submit" value="送信">
+</form>
+{% endblock %}
