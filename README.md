@@ -1,9 +1,5 @@
 # Flask Hello World 検証 APP
 
-## インストールパッケージ
-
-`pipenv install flask`
-
 ## PJ 初期化
 
 ```bash
